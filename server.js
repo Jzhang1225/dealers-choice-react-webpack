@@ -3,7 +3,9 @@ const app = express();
 const { init } = require('./db/db')
 const path = require('path')
 
+app.use(express.json())
 app.use('/api/people', require('./routes'))
+app.use('/dist', express.static(path.join(__dirname, 'dist')))
 
 app.get('/', (req,res) => res.sendFile(path.join(__dirname, 'index.html')))
 
