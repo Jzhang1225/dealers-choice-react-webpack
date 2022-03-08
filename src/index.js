@@ -100,7 +100,7 @@ class Main extends React.Component {
 
     render(){
         if (this.state.totalAge === 500){ return(
-            <h1>YOU'RE A WINNER, VERY SMART AND GREAT PERSON</h1>
+            <h1>YOU'RE A WINNER, VERY SMART AND A GREAT PERSON</h1>
         )}
         return (
             <div>
